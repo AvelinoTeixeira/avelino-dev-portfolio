@@ -47,12 +47,19 @@ document.querySelectorAll('.skill').forEach(function(skill) {
 //Animation text description
 
 const textElement = document.getElementById('typing-text');
-const text = 'Desenvolvedor Full-Stack'; // O texto que deseja animar
-const delay = 1000; // O tempo de atraso entre apagar e reescrever o texto (em milissegundos)
-const typingSpeed = 100; // A velocidade de digitação (em milissegundos)
+const texts = [
+  'Desenvolvedor Full-Stack',
+  'Especialista em UX/UI Design'
+]; // Array com os textos que deseja animar
+const delay = 1000; // Tempo de atraso entre apagar e reescrever o texto (em milissegundos)
+const typingSpeed = 100; // Velocidade de digitação (em milissegundos)
+
+let currentTextIndex = 0;
 
 function typeText() {
   let i = 0;
+  let text = texts[currentTextIndex];
+  
   let typingInterval = setInterval(function() {
     textElement.textContent += text[i];
     i++;
@@ -70,6 +77,7 @@ function eraseText() {
     textLength--;
     if (textLength === 0) {
       clearInterval(eraseInterval);
+      currentTextIndex = (currentTextIndex + 1) % texts.length; // Avança para o próximo texto no array circularmente
       setTimeout(typeText, delay);
     }
   }, typingSpeed);
@@ -77,6 +85,9 @@ function eraseText() {
 
 // Iniciar o processo
 typeText();
+
+
+
 
 
 // Header On Scroll Color Change
