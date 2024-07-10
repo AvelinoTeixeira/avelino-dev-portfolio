@@ -100,6 +100,11 @@ header.shadow {
 
 @media (max-width: 500px){
 
+  .conjunto-skills p{  
+    text-align: center;
+    width: 100%; 
+  }
+
 
   .sobre_text{
       margin: 10px;
@@ -113,6 +118,9 @@ header.shadow {
     
   }
 }
+
+
+
 
 @media (max-width: 478px){
   .experience p{

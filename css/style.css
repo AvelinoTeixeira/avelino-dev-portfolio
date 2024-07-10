@@ -224,7 +224,8 @@ header {
 }
 
 .conjunto-skills p{  
-    font-size: 15px;
+    text-align: center;
+    font-size: 10px;
     margin: auto;
     color: #a4a7b1;
     width: 450px;
