@@ -396,10 +396,13 @@ header {
 
 
 .heading{
+    background: linear-gradient(to right, #12C2E9, #C471ED, #F64F59); /* Gradiente da esquerda para a direita */
+    -webkit-background-clip: text; /* Clip para o texto */
+    -webkit-text-fill-color: transparent; /* Cor do texto transparente */
     font-weight: 400;
     margin-bottom: 30px;
     opacity: 5;
-    color:  #fff;
+    
     text-align: center;
     font-size: 40px;
     background-clip: text;
