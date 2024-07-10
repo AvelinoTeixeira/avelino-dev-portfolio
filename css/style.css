@@ -499,7 +499,6 @@ header {
 }
 
 .conversa{
-    font-weight: 400;
     margin: auto;
     width: 375px;
     margin-top: 300px;
@@ -507,17 +506,18 @@ header {
 }
 
 .conversa h3{
+    font-size: 30px;
+
     color: #fff;
     font-weight: 300;
 }
 
 .conversa p{
+    font-size: 15px;
     color: #a4a7b1;
 }
 
-.conversa h3{
-    font-size: 40px;
-}
+
 
 .footer {
     margin-bottom: 70px;
