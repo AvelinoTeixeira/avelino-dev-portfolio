@@ -48,8 +48,7 @@ document.querySelectorAll('.skill').forEach(function(skill) {
 
 const textElement = document.getElementById('typing-text');
 const texts = [
-  'Desenvolvedor Full-Stack',
-  'Especialista em UX/UI Design'
+  'Front-end Developer and ',
 ]; // Array com os textos que deseja animar
 const delay = 1000; // Tempo de atraso entre apagar e reescrever o texto (em milissegundos)
 const typingSpeed = 100; // Velocidade de digitação (em milissegundos)

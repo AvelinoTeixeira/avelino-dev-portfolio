@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: #111215;
+    background-color: #121212;
 }
 
 :root {
@@ -47,7 +47,7 @@ html::-webkit-scrollbar-thumb {
     padding-bottom: 15%;
     background-position: center;
     background-size: cover;
-    background-image: url(../img/back-header.jpg);
+    background-image: url(../img/back-header.png);
 
 }
 
@@ -62,16 +62,15 @@ header {
    
 }
 
-
-
 .bx{
     color: #fff;
 }
 
-.logo h1 {
-    background: linear-gradient(to right, #12C2E9, #C471ED, #F64F59); /* Gradiente da esquerda para a direita */
-    -webkit-background-clip: text; /* Clip para o texto */
-    -webkit-text-fill-color: transparent; /* Cor do texto transparente */
+.logo img { 
+    margin-top: 10px;
+   
+    width: 250px;
+   
 }
 
 .nav {
@@ -108,15 +107,16 @@ header {
 
 /* Home */
 .home-content{
+    margin-left: 10%;
    margin-top: 150px;
-    text-align: center;
+    text-align: justify;
     align-items: center;
 }
 
 
 .home-text h1 {
     color: #fff;
-    font-size: 3.4rem;
+    font-size: 2.3rem;
     margin-bottom: 1rem;
 }
 
@@ -130,13 +130,10 @@ header {
 }
 
 .centered-text {
-    position: absolute;
-    top: 20%;
-    left: 50%;
+    background: linear-gradient(to right, #12C2E9, #C471ED, #F64F59); /* Gradiente da esquerda para a direita */
+    -webkit-background-clip: text; /* Clip para o texto */
+    -webkit-text-fill-color: transparent; /* Cor do texto transparente */
     transform: translate(-50%, -50%);
-    font-size: 24px;
-    text-align: center;
-   
     overflow: hidden; /* Escondendo o texto que ultrapassar a largura fixa */
     white-space: nowrap; /* Evitando que o texto quebre em várias linhas */
   }
@@ -181,7 +178,7 @@ header {
     -webkit-background-clip: text; /* Clip para o texto */
     -webkit-text-fill-color: transparent; /* Cor do texto transparente */
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .sobre_img img{
@@ -208,13 +205,14 @@ header {
 
 /* EXPERIENCIA PROFISSIONAL*/
 .conjunto-skills{
+    text-align: center;
     margin-bottom: 50px;
     margin-top: 170px;
-    text-align: center;
+    text-align: justify;
 }
 
 .conjunto-skills h3{
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 10px;
     background: linear-gradient(to right, #12C2E9, #C471ED, #F64F59); /* Gradiente da esquerda para a direita */
     -webkit-background-clip: text; /* Clip para o texto */
@@ -225,12 +223,18 @@ header {
 
 .conjunto-skills p{  
     text-align: center;
-    font-size: 15px;
     margin: auto;
     color: #a4a7b1;
     width: 450px;
-    transition: .5s;
+    
 }
+
+.excard p, li{
+    font-size: 13px;
+    color: #a4a7b1;
+}
+
+
 
 .expegrid{
     margin-bottom: 100px;
@@ -284,16 +288,16 @@ header {
 }
 
 
-.excard{
-    cursor:pointer;
-    border-radius:5px;
-    padding:30px;
-    height: 300px;
+.excard {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 30px;
     background-color: #a4a7b13b;
     margin: auto;
     width: 300px;
-    transition: .5s;
+    transition: 0.5s;
 }
+
 
 .excard:hover{
     transform: translateY(-10px);
@@ -322,9 +326,9 @@ header {
 
 /* Habilidades*/
 .habilidade h3{
-    
+    font-weight: 700;
     margin-bottom: -20px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .habilitations p{
@@ -404,12 +408,13 @@ header {
     font-weight: 400;
     margin-bottom: 30px;
     opacity: 5;
-    
+    font-weight: 700;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     background-clip: text;
     
 }
+
 
 .shop-container{
     margin: auto;
@@ -544,6 +549,9 @@ header {
     margin-bottom: 4px;
 }
 .social {
+    margin-left: -10px;
+}
+.social2 {
     background: linear-gradient(to right, #12C2E9, #C471ED, #F64F59); /* Gradiente da esquerda para a direita */
     -webkit-background-clip: text; /* Clip para o texto */
     -webkit-text-fill-color: transparent;
@@ -567,3 +575,78 @@ header {
     color: #a4a7b1;
 }
 
+
+/* faça mais*/
+.faça-mais .container{
+    margin-top: 150px; 
+    display: flex;
+    align-items: center;
+}
+.faça-mais .faça-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+.faça-mais .faça-mais-text h3{
+    color: #fff;
+    font-size: 45px;
+}
+.faça-mais .faça-mais-text p{
+    color: #9FA2AB;
+    margin:5px 0 10px 0;
+}
+.faça-mais .faça-mais-img{
+    width: 50%;
+}
+.faça-mais .faça-mais-img img{
+    width: 100%;
+
+}
+
+@media(max-width: 830px){
+    /* página home responsive */
+    .faça-mais .faça-mais-text{
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;
+    }
+    .faça-mais .container{
+        flex-direction: column;
+    }
+    .faça-mais .faça-mais-text h3{
+        font-size: 48px;
+    }
+    .faça-mais .faça-mais-text,
+    .faça-mais .faça-mais-img{
+        width: 100%;
+    }
+    
+    
+}
+@media (max-width:500px) {
+    .faça-mais .faça-mais-text h3{
+        font-size: 40px;
+    }
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn {
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover {
+    background-color: #3580db;
+}
