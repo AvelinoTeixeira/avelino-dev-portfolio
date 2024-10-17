@@ -165,6 +165,10 @@ header.shadow {
 
 
 @media (max-width: 360px){
+
+  .background{
+    width: 100%;
+  }
   
 
   .sobre img{
@@ -174,7 +178,11 @@ header.shadow {
       padding: 4px;
   }
   .home-text h1 {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
+  }
+
+  .social .bx{
+    font-size: 25px;
   }
   
   .heading {
