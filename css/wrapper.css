@@ -93,8 +93,12 @@
     }
 
     .strategy div {
-        flex: 1 1 96%; /* Cada card ocupará toda a largura */
-        max-width: 96%; /* Removemos o limite para ocupar a largura completa */
+        flex: 1 1 93%; /* Cada card ocupará toda a largura */
+        max-width: 93%; /* Removemos o limite para ocupar a largura completa */
+    }
+
+    .card-box {
+        width: 97%;
     }
 }
 
