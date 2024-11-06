@@ -50,6 +50,12 @@
 
 
 @media (max-width: 768px) {
+
+  .main {
+    width: 98%;
+  }
+
+
   .header-title {
     height: auto; /* Permite que a altura se ajuste */
     padding: 10px; /* Reduz o padding em telas menores */
