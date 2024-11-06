@@ -25,7 +25,15 @@
   .container {
     margin: 0 auto;
     width:90%;
+    
 }
+
+.container2 {
+  margin: 0 auto;
+  width:90%;
+  
+}
+
   section{
       padding: 50px 0;
   }
@@ -40,62 +48,17 @@
  
 }
 
-header.shadow {
-  background: var(--bg-color);
-  box-shadow: 1px 2px 4px rgb(15 54 55 / 10%);
-  transition: 0.2s;
-}
 
-  .home-text h1{
-      font-size: 3rem;
-  }
-  .experience h3{
-    font-size: 2rem;
-  }
-}
 @media (max-width: 768px) {
-
- 
-  #menu-icon{
-      display: initial;
-      z-index: 150;
+  .header-title {
+    height: auto; /* Permite que a altura se ajuste */
+    padding: 10px; /* Reduz o padding em telas menores */
   }
-  .navbar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: #111215;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      box-shadow: 0 5px 8px rgb(15 54 55 / 10%);
-      clip-path: circle(0% at 50% 0);
-      transition: .5s;
+  
+  .name {
+    flex-direction: column; /* Coloca o nome e os ícones em coluna se necessário */
   }
-  .navbar a {
-      display: block;
-      padding: 12px;
-  }
-  .navbar.active{
-      clip-path: circle(144% at 50% 0);
-  }
-  .home-text h1{
-      font-size: 2rem;
-  }
-
-  .home-text h3{
-      font-size: 20px;
-  }
-  p{
-      font-size: 0.875rem;
-  }
-  .btn{
-      padding: 15px 16px;
-  }
-  .heading {
-      font-size: 2.4rem;
-  }
+  
 }
 
 @media (max-width: 500px){
@@ -197,4 +160,5 @@ header.shadow {
       grid-template-columns: repeat(1, 144px);
   }
   
+}
 }
