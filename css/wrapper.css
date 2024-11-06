@@ -33,7 +33,7 @@
 
 .strategy div {
     flex: 1 1 300px; /* Define um tamanho mínimo e permite que os cards cresçam */
-    max-width: 340px; /* Limita o tamanho máximo de cada card */
+    max-width: 330px; /* Limita o tamanho máximo de cada card */
     min-width: 250px; /* Define o tamanho mínimo para um card */
     box-sizing: border-box;
 }
