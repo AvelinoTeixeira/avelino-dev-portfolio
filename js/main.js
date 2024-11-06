@@ -1,119 +1,29 @@
-// Traduções
-const translations = {
-  pt: {
-    welcomeTitle: "Bem-vindo ao meu Portfólio",
-    description: "Sou Avelino Teixeira, um Desenvolvedor Front-end...",
-    skillsTitle: "Habilidades",
-    skillsDescription: "Aqui estão algumas das minhas habilidades..."
-  },
-  en: {
-    welcomeTitle: "Welcome to my Portfolio",
-    description: "I am Avelino Teixeira, a Front-end Developer...",
-    skillsTitle: "Skills",
-    skillsDescription: "Here are some of my skills..."
-  }
-};
 
-// Função para mudar o idioma
-function changeLanguage(lang) {
-  document.getElementById("welcome-title").innerText = translations[lang].welcomeTitle;
-  document.getElementById("description").innerText = translations[lang].description;
-  document.getElementById("skills-title").innerText = translations[lang].skillsTitle;
-  document.getElementById("skills-description").innerText = translations[lang].skillsDescription;
-}
+// Atualização para barras de progresso lineares
+document.querySelectorAll('.skill-bar-fill').forEach(function(skillBar) {
+  // Obtenha o valor de preenchimento da barra de progresso a partir do atributo 'data-percentage'
+  const percentage = parseInt(skillBar.getAttribute('data-percentage'));
+  skillBar.style.width = '0%'; // Inicia a barra de progresso com 0% para efeito de animação
 
-// Event listeners para os botões
-document.getElementById("pt-button").addEventListener("click", () => changeLanguage("pt"));
-document.getElementById("en-button").addEventListener("click", () => changeLanguage("en"));
-
-// Inicializa o idioma padrão (opcional)
-changeLanguage('pt'); // Ou 'en' se preferir inglês como padrão
-
-
-
-//Medidor de Habilidades
-document.querySelectorAll('.skill').forEach(function(skill) {
-  var ctx = skill.querySelector('.skill-canvas').getContext('2d');
-  var skillValue = parseFloat(skill.getAttribute('data-value'));
-  var currentPercent = 0;
-  var animation;
-
-  function drawCircle(progress) {
-      ctx.clearRect(0, 0, 110, 110);
-      ctx.beginPath();
-      ctx.arc(55, 55, 50, -Math.PI / 2, (Math.PI * 2 * progress) - Math.PI / 2, false);
-      ctx.lineWidth = 5;
-      ctx.strokeStyle = '#12C2E9';
-      ctx.stroke();
-  }
-
-  function updatePercentage(percent) {
-      skill.querySelector('.skill-percent').textContent = Math.round(percent * 100) + "%";
-  }
-
-  function animateSkill() {
-      animation = setInterval(function() {
-          if (currentPercent >= skillValue) {
-              clearInterval(animation);
-              setTimeout(resetSkill, 5000); // Descarrega e recarrega após 5 segundos
+  // Função de animação para preencher a barra gradualmente
+  function animateSkillBar() {
+      let currentWidth = 0;
+      const interval = setInterval(() => {
+          if (currentWidth >= percentage) {
+              clearInterval(interval); // Para a animação quando o valor é alcançado
           } else {
-              currentPercent += 0.01; // Velocidade da animação
-              drawCircle(currentPercent);
-              updatePercentage(currentPercent);
+              currentWidth++; // Aumenta a largura da barra
+              skillBar.style.width = `${currentWidth}%`;
+              skillBar.textContent = `${currentWidth}%`; // Atualiza o texto exibido
           }
-      }, 15); // Tempo entre cada frame da animação
+      }, 15); // Tempo entre cada incremento
   }
 
-  function resetSkill() {
-      currentPercent = 0;
-      animateSkill();
-  }
-
-  animateSkill(); // Inicia a animação quando o script é carregado
+  // Inicia a animação ao carregar o script
+  animateSkillBar();
 });
 
 
-
-//Animation text description
-
-const textElement = document.getElementById('typing-text');
-const texts = [
-  'Front-end Developer and ',
-]; // Array com os textos que deseja animar
-const delay = 1000; // Tempo de atraso entre apagar e reescrever o texto (em milissegundos)
-const typingSpeed = 100; // Velocidade de digitação (em milissegundos)
-
-let currentTextIndex = 0;
-
-function typeText() {
-  let i = 0;
-  let text = texts[currentTextIndex];
-  
-  let typingInterval = setInterval(function() {
-    textElement.textContent += text[i];
-    i++;
-    if (i === text.length) {
-      clearInterval(typingInterval);
-      setTimeout(eraseText, delay);
-    }
-  }, typingSpeed);
-}
-
-function eraseText() {
-  let textLength = textElement.textContent.length;
-  let eraseInterval = setInterval(function() {
-    textElement.textContent = textElement.textContent.slice(0, textLength - 1);
-    textLength--;
-    if (textLength === 0) {
-      clearInterval(eraseInterval);
-      currentTextIndex = (currentTextIndex + 1) % texts.length; // Avança para o próximo texto no array circularmente
-      setTimeout(typeText, delay);
-    }
-  }, typingSpeed);
-}
-
-// Iniciar o processo
-typeText();
 
 
 

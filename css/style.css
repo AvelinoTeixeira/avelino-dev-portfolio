@@ -117,22 +117,3 @@ html::-webkit-scrollbar-thumb {
     font-size: 15px;
     color: #a4a7b1;
 }
-
-
-
-
-
-@media(max-width: 830px) {
-    /* página home responsive */
-
-
-
-}
-
-
-/* Esconde a imagem em telas menores */
-@media (max-width: 768px) {}
-
-
-
-@media (max-width:500px) {}
