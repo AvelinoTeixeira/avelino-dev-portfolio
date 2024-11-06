@@ -55,6 +55,11 @@
     width: 100%;
   }
 
+  .conversa p {
+    font-size: 13px;
+    color: #C4CFDE;
+}
+
 
   .header-title {
     height: auto; /* Permite que a altura se ajuste */
