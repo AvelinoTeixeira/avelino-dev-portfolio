@@ -55,9 +55,12 @@
     width: 100%;
   }
 
-  .conversa p {
-    font-size: 13px;
+  .conversa{
     width: 100%;
+  }
+
+  .conversa p {
+    font-size: 12px;
     color: #C4CFDE;
 }
 
