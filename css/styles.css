@@ -7,7 +7,7 @@
  
 }
 
-html {
+html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -229,7 +229,7 @@ nav .menu-btn i{
 
 .social .bx {
     cursor: pointer;
-    padding: 5px;
+    padding: 8px ;
     border-radius: 0.5rem;
     font-size: 30px;
 }
