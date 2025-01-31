@@ -4,7 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 nav {
     position: fixed;
@@ -89,10 +94,7 @@ nav .menu-btn i {
 }
 
 /* Animação de transição entre as seções */
-html {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
+
 
 
 nav .menu-btn i{
@@ -138,6 +140,7 @@ nav .menu-btn i{
 /* CONTEÚDO PRINCIPAL*/
 
 .conteudo{
+    overflow-x: hidden;
     margin-left: 60px;
     padding: 40px;
     color: var(--text-secondary-color);
