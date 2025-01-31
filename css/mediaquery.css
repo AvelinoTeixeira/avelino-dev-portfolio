@@ -305,9 +305,14 @@
 @media (min-width: 1200px)  {
   .section-desc, .sobre{
    max-width: 1200px;
-   margin: 90px auto;
+   margin: 40px auto;
    justify-content: center;
     
+  }
+
+  .sobre {
+    margin-top: 100px;
+    margin-bottom: 200px;
   }
 
   .my{
