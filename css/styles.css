@@ -14,7 +14,7 @@ nav {
     background-color: #FFFFFF;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px 0 100px;
+    padding: 0 20px 0 100px;
     flex-wrap: wrap;
     transition: box-shadow 0.3s ease;
     z-index: 100;
@@ -542,7 +542,7 @@ nav .menu-btn i{
         flex-direction: column;
     }
     .faça-mais .faça-mais-text h3{
-        font-size: 48px;
+        font-size: 30px;
     }
     .faça-mais .faça-mais-text,
     .faça-mais .faça-mais-img{
@@ -553,7 +553,7 @@ nav .menu-btn i{
 }
 @media (max-width:500px) {
     .faça-mais .faça-mais-text h3{
-        font-size: 30px;
+        font-size:25px;
     }
 
     .faça-mais .faça-mais-text p{
@@ -563,9 +563,38 @@ nav .menu-btn i{
     
 }
 
+@media (max-width:393px) {
+
+    nav {
+        padding: 0 30px 0 80px;
+    }
+    
+    .faça-mais .faça-mais-img{
+        width: 100%;
+    }
+
+    .faça-mais .faça-mais-img img{
+        max-width: 393px;
+        justify-content: center;
+
+    }
+
+    .faça-mais .faça-mais-text{
+
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .faça-mais .faça-mais-text p{
+        font-size: 13px;
+    }
+
+    
+}
+
 @media (max-width:768px) {
     .container_projects{
-        width: 99%;
+        width: 100%;
     }
 }
 
