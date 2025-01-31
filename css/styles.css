@@ -628,7 +628,7 @@ nav .menu-btn i{
 /* FOOTER SECTION*/
 
 footer{
-    
+    margin-top: 200px;
     padding-top: 4px;
     background: #242428;
 }
@@ -638,7 +638,7 @@ footer{
     width: 100%;
     background: #242428;
     margin-bottom: 30px;
-    margin-top: 80px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: repeat(3, 164px);
