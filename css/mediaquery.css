@@ -232,11 +232,6 @@
 @media (max-width: 768px) {
 
 
-
-  .main {
-    width: 100%;
-  }
-
   .conversa {
     width: 100%;
   }
@@ -303,6 +298,30 @@
   .skills-list {
     width: 1000px;
   }
+
+  
+}
+
+@media (min-width: 1200px)  {
+  .section-desc, .sobre{
+   max-width: 1200px;
+   margin: 90px auto;
+   justify-content: center;
+    
+  }
+
+  .my{
+    max-width: 1200px;
+   margin: 20px auto;
+   justify-content: center;
+  }
+
+  .conteudo {
+    padding-top: 100px;
+    margin-bottom: 200x;
+  }
+
+  
 }
 
 
@@ -321,18 +340,8 @@
 
   }
 
-  section {
-    padding: 50px 0;
-  }
+  
 
-  header {
-    display: block;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-
-  }
+  
 
 }
