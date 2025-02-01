@@ -21,6 +21,54 @@
 
 
   <title>Avelino Teixeira</title>
+
+  <style>
+    /* Contêiner do Marquee */
+    .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        /* Altura ajustável */
+        position: relative;
+    }
+
+    /* Conteúdo rolante */
+    .marquee-content {
+        display: flex;
+        gap: 30px;
+        white-space: nowrap;
+        position: absolute;
+        animation: marquee 10s linear infinite;
+    }
+
+    /* Animação contínua */
+    @keyframes marquee {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    /* Ajuste das imagens */
+    .marquee-content img {
+            height: 50px; /* Imagens menores */
+            width: auto;
+            border-radius: 5px;
+            object-fit: cover;
+    }
+
+    /* Pausar animação ao passar o mouse */
+    .marquee-container:hover .marquee-content {
+        animation-play-state: paused; 
+    }
+  
+</style>
 </head>
 
 <body>
@@ -122,15 +170,22 @@
           <div class="skill-meter-container">
             <div class="skill-label">ADOBE XD</div>
             <div class="skill-bar">
+              <div class="skill-bar-fill" data-percentage="80">0%</div>
+            </div>
+          </div>
+          <div class="skill-meter-container">
+            <div class="skill-label">ADOBE PREMIERE</div>
+            <div class="skill-bar">
               <div class="skill-bar-fill" data-percentage="70">0%</div>
             </div>
           </div>
           <div class="skill-meter-container">
-            <div class="skill-label">DESIGN</div>
+            <div class="skill-label">AFTER EFFECTS</div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="90">0%</div>
+              <div class="skill-bar-fill" data-percentage="70">0%</div>
             </div>
           </div>
+          
         </div>
         <!-- Column 2 -->
         <div class="skill-column">
@@ -144,13 +199,19 @@
           <div class="skill-meter-container">
             <div class="skill-label">Next.JS</div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="85">0%</div>
+              <div class="skill-bar-fill" data-percentage="90">0%</div>
+            </div>
+          </div>
+          <div class="skill-meter-container">
+            <div class="skill-label">TailwindCss</div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-percentage="88">0%</div>
             </div>
           </div>
           <div class="skill-meter-container">
             <div class="skill-label">JavaScript</div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="85">0%</div>
+              <div class="skill-bar-fill" data-percentage="90">0%</div>
             </div>
           </div>
           <div class="skill-meter-container">
@@ -169,6 +230,28 @@
       </div>
     </section>
 
+
+    <section>
+      <div class="marquee-container">
+         <div class="marquee-content">
+            <img src="img/REACT-JS.png" alt="">
+            <img src="img/NEXT-JS.png" alt="">
+            <img src="img/TAILWIND.png" alt="">
+            <img src="img/JAVASCRIPT.png" alt="">
+            <img src="img/HTML5.png" alt="">
+            <img src="img/CSS3.png" alt="">
+            <img src="img/GIT-VERS.png" alt="">
+            <img src="img/GITHUB.png" alt="">
+            <img src="img/WODRPRESS.png" alt="">
+            <img src="img/FIGMA.png" alt="">
+            <img src="img/ADOBE-PREMIERE.png" alt="">
+            <img src="img/ADOBE-XD.png" alt="">
+            <img src="img/AFTER-EFFECTS.png" alt="">
+         </div>
+      </div>
+    </section>
+
+    
 
 
     <section class="my">
@@ -210,6 +293,7 @@
         </div>
       </div>
     </section>
+
 
     <div id="projects" class="Destaque">
       <h1>Portfólio</h1>
