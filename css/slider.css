@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slide 20s linear infinite;
+    animation: slide 13s linear infinite;
 }
 
 .logos img {
