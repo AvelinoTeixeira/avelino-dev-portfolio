@@ -7,3 +7,5 @@ images.forEach(image => {
   const clone = image.cloneNode(true);
   slider.appendChild(clone);
 });
+
+

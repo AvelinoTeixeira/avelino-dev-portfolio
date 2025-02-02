@@ -27,3 +27,76 @@
         transform: translateX(-50%);
     }
 }
+
+
+.wave-effect {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #000, #6C7CFC);
+    background-size: 200% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: wave 8s infinite linear;
+    animation: pingpong 2s infinite alternate;
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position: -200% 0;
+    }
+    50% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+
+  .letter {
+    display: inline-block;
+    color: #99AAFC;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  .letter:nth-child(1) {
+    animation-delay: 2s;
+  }
+  
+  .letter:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .letter:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .letter:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .letter:nth-child(5) {
+    animation-delay: 0.10s;
+  }
+  
+  .letter:nth-child(6) {
+    animation-delay: 0.12s;
+  }
+  
+  
+  
+  
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px); /* Pulo para cima */
+    }
+    100% {
+      transform: translateY(0); /* Volta para a posição original */
+    }
+  }
+  

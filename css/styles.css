@@ -177,12 +177,26 @@ nav .menu-btn i{
     font-size: 30px;
 }
 
+
+
 .image-ux{
     width: 40%;
 }
 
 .image-ux img{
+    animation: moveUpDown 2s ease-in-out infinite;
     width: 400px;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        
+        transform: translateY(-20px);
+        backdrop-filter: blur(5px); /* Adicionando o filtro de fundo */
+    }
 }
 
 

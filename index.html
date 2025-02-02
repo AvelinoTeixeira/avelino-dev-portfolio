@@ -15,10 +15,14 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="css/mediaquery.css">
   <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/typewriter.css">
 
 
   <title>Avelino Teixeira</title>
@@ -28,35 +32,37 @@
 
 <body>
   <nav>
-    <div class="logo"> 
-        <img src="/img/Avelino Teixeira.png" alt=""> 
+    <div class="logo">
+      <img src="/img/Avelino Teixeira.png" alt="">
     </div>
 
     <div class="menu-btn">
-        <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+      <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
     </div>
 
     <ul>
-        <li> <a href="#home" class="active">Home</a> </li>
-        <li> <a href="#sobre">Sobre</a> </li>
-        <li> <a href="#projects">Projetos</a> </li>
-        <li> <a href="#contato">Contato</a> </li>
+      <li> <a href="#home" class="active">Home</a> </li>
+      <li> <a href="#sobre">Sobre</a> </li>
+      <li> <a href="#projects">Projetos</a> </li>
+      <li> <a href="#contato">Contato</a> </li>
     </ul>
-</nav>
+  </nav>
 
 
   <main id="home" class="conteudo">
     <section class="section-desc">
       <div class="title">
-        <h1>Desenvolvedor <br> Front-end & <br>
+        <h1 class="wave-effect" data-aos="fade-right">Desenvolvedor <br> Front-end & <br>
           UX/UI Designer.</h1>
-        <p>Crio interfaces escaláveis e impactantes, integrando Desenvolvimento Front-end e UX/UI Design para oferecer
-          experiências intuitivas e de alta performance. Utilizo as principais tecnologias: <strong>React</strong>,
-          <strong>TypeScript</strong>, <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, <strong>Node.js</strong>
-          e <strong>Figma</strong> para entregar soluções inovadoras e de qualidade.</p>
+        <p data-aos="fade-right">Crio interfaces escaláveis e impactantes, integrando Desenvolvimento Front-end e UX/UI
+          Design para oferecer
+          experiências intuitivas e de alta performance. Utilizo as principais tecnologias: <strong class="letter">React</strong>,
+          <strong class="letter">TypeScript</strong>, <strong class="letter">Next.js</strong>, <strong class="letter">Tailwind CSS</strong>, <strong class="letter">Node.js</strong>
+          e <strong class="letter">Figma</strong> para entregar soluções inovadoras e de qualidade.
+        </p>
       </div>
 
-      <div class="image-ux">
+      <div data-aos="fade-left" class="image-ux">
         <img src="img/image-ux.png" alt="">
       </div>
     </section>
@@ -65,31 +71,32 @@
 
     <section id="sobre" class="sobre">
       <div class="sobre-desc">
-        <h3>Sobre mim</h3>
-        <p>Sou Avelino Teixeira, Desenvolvedor Front-end e UX/UI Designer, com paixão por criar soluções digitais que
+        <h3 data-aos="fade-up">Sobre mim</h3>
+        <p data-aos="fade-up">Sou Avelino Teixeira, Desenvolvedor Front-end e UX/UI Designer, com paixão por criar
+          soluções digitais que
           unem funcionalidade e estética. Com habilidades em tecnologias como React, JavaScript, TypeScript, HTML, CSS e
           ferramentas como Figma, trabalho para transformar ideias em interfaces modernas, escaláveis e de alta
           performance. Meu foco é sempre proporcionar uma experiência de usuário intuitiva, acessível e impactante.
           Busco constantemente aprender e aplicar as melhores práticas nas duas áreas, visando entregar soluções que
           tragam resultados reais para os projetos e empresas com os quais trabalho.</p>
         <div class="social">
-          <a href="https://www.linkedin.com/in/avelino-teixeira-351a8524a/?locale=pt_BR" target="_blank">
+          <a data-aos="fade-right" href="https://www.linkedin.com/in/avelino-teixeira-351a8524a/?locale=pt_BR"
+            target="_blank">
             <i class='bx bxl-linkedin' style="color: #C4CFDE;">
             </i>
           </a>
-          <a href="https://api.whatsapp.com/send/?phone=%2B244958323454&text=Ol%C3%A1%2C+estou+interessado+nos+seus+servi%C3%A7os
-                              " target="_blank">
+          <a data-aos="fade-right" href="https://api.whatsapp.com/send/?phone=%2B244958323454&text=Ol%C3%A1%2C+estou+interessado+nos+seus+servi%C3%A7os" target="_blank">
             <i class='bx bxl-whatsapp' style="color: #C4CFDE;">
             </i>
           </a>
-          <a href="https://github.com/AvelinoTeixeira?tab=repositories" target="_blank">
+          <a data-aos="fade-right" href="https://github.com/AvelinoTeixeira?tab=repositories" target="_blank">
             <i class='bx bxl-github' style="color: #C4CFDE;">
             </i>
           </a>
         </div>
       </div>
 
-      <div id="sobre" class="sobre-image">
+      <div data-aos="zoom-in" id="sobre" class="sobre-image">
         <img src="img/avatar-Photoroom.png" alt="">
       </div>
     </section>
@@ -140,7 +147,7 @@
               <div class="skill-bar-fill" data-percentage="70">0%</div>
             </div>
           </div>
-          
+
         </div>
         <!-- Column 2 -->
         <div class="skill-column">
@@ -189,39 +196,39 @@
     <section>
       <div class="slider">
         <div class="logos">
-            <img src="img/REACT-JS.png" alt="">
-            <img src="img/NEXT-JS.png" alt="">
-            <img src="img/TAILWIND.png" alt="">
-            <img src="img/JAVASCRIPT.png" alt="">
-            <img src="img/HTML5.png" alt="">
-            <img src="img/CSS3.png" alt="">
-            <img src="img/GIT-VERS.png" alt="">
-            <img src="img/GITHUB.png" alt="">
-            <img src="img/WODRPRESS.png" alt="">
-            <img src="img/FIGMA.png" alt="">
-            <img src="img/ADOBE-PREMIERE.png" alt="">
-            <img src="img/ADOBE-XD.png" alt="">
-            <img src="img/AFTER-EFFECTS.png" alt="">
+          <img src="img/REACT-JS.png" alt="">
+          <img src="img/NEXT-JS.png" alt="">
+          <img src="img/TAILWIND.png" alt="">
+          <img src="img/JAVASCRIPT.png" alt="">
+          <img src="img/HTML5.png" alt="">
+          <img src="img/CSS3.png" alt="">
+          <img src="img/GIT-VERS.png" alt="">
+          <img src="img/GITHUB.png" alt="">
+          <img src="img/WODRPRESS.png" alt="">
+          <img src="img/FIGMA.png" alt="">
+          <img src="img/ADOBE-PREMIERE.png" alt="">
+          <img src="img/ADOBE-XD.png" alt="">
+          <img src="img/AFTER-EFFECTS.png" alt="">
 
 
-            <img src="img/REACT-JS.png" alt="">
-            <img src="img/NEXT-JS.png" alt="">
-            <img src="img/TAILWIND.png" alt="">
-            <img src="img/JAVASCRIPT.png" alt="">
-            <img src="img/HTML5.png" alt="">
-            <img src="img/CSS3.png" alt="">
-            <img src="img/GIT-VERS.png" alt="">
-            <img src="img/GITHUB.png" alt="">
-            <img src="img/WODRPRESS.png" alt="">
-            <img src="img/FIGMA.png" alt="">
-            <img src="img/ADOBE-PREMIERE.png" alt="">
-            <img src="img/ADOBE-XD.png" alt="">
-            <img src="img/AFTER-EFFECTS.png" alt="">
+          <img src="img/REACT-JS.png" alt="">
+          <img src="img/NEXT-JS.png" alt="">
+          <img src="img/TAILWIND.png" alt="">
+          <img src="img/JAVASCRIPT.png" alt="">
+          <img src="img/HTML5.png" alt="">
+          <img src="img/CSS3.png" alt="">
+          <img src="img/GIT-VERS.png" alt="">
+          <img src="img/GITHUB.png" alt="">
+          <img src="img/WODRPRESS.png" alt="">
+          <img src="img/FIGMA.png" alt="">
+          <img src="img/ADOBE-PREMIERE.png" alt="">
+          <img src="img/ADOBE-XD.png" alt="">
+          <img src="img/AFTER-EFFECTS.png" alt="">
         </div>
-    </div>
+      </div>
     </section>
 
-    
+
 
 
     <section class="my">
@@ -269,31 +276,32 @@
       <h1>Portfólio</h1>
     </div>
 
-      
-      <!--container -->
 
-    
+    <!--container -->
+
+
     </div>
   </main>
 
   <section class="project">
-    <section  class="faça-mais">
-      <!--container_projects -->
+    <section class="faça-mais" data-aos="fade-up">
       <div class="container_projects">
         <div class="faça-mais-text">
           <h3>Dashboard</h3>
           <p>
-            Este projeto de Dashboard visa criar um painel personalizável que centraliza dados essenciais, oferecendo uma visão em tempo real do desempenho empresarial para ajudar na tomada de decisões estratégicas.
+            Este projeto de Dashboard visa criar um painel personalizável que centraliza dados essenciais, oferecendo
+            uma visão em tempo real do desempenho empresarial para ajudar na tomada de decisões estratégicas.
           </p>
-          <a href="https://celadon-khapse-9024fd.netlify.app/" target="_blank" class="btn-view animate-btn">VER PROJETO</i></a>
+          <a href="https://celadon-khapse-9024fd.netlify.app/" target="_blank" class="btn-view animate-btn">VER
+            PROJETO</a>
         </div>
         <div class="faça-mais-img">
           <img class="img-zoom" src="img/dashboard.PNG" alt="">
         </div>
       </div>
     </section>
-    <section class="faça-mais">
-      <!--container -->
+
+    <section class="faça-mais" data-aos="fade-right">
       <div class="container_projects">
         <div class="faça-mais-img">
           <img class="img-zoom" src="img/fincontrol.PNG" alt="">
@@ -301,29 +309,34 @@
         <div class="faça-mais-text">
           <h3>Fincontrol</h3>
           <p>
-            O "FinControl – Controle Financeiro Inteligente" é uma plataforma intuitiva de controle financeiro pessoal, que ajuda os usuários a gerenciar suas finanças, oferecendo informações claras sobre gastos, investimentos e metas financeiras.
+            O "FinControl – Controle Financeiro Inteligente" é uma plataforma intuitiva de controle financeiro pessoal,
+            que ajuda os usuários a gerenciar suas finanças, oferecendo informações claras sobre gastos, investimentos e
+            metas financeiras.
           </p>
-          <a href="https://controle-financeiro-gf1p.vercel.app/" target="_blank" class="btn-view animate-btn">VER PROJETO</a>
+          <a href="https://controle-financeiro-gf1p.vercel.app/" target="_blank" class="btn-view animate-btn">VER
+            PROJETO</a>
         </div>
       </div>
     </section>
-    <section class="faça-mais">
-      <!--container -->
+
+    <section class="faça-mais" data-aos="fade-left">
       <div class="container_projects">
         <div class="faça-mais-text">
           <h3>WeatherNow</h3>
           <p>
-            O WeatherNow é um aplicativo que fornece dados em tempo real sobre clima, com previsão de 5 dias, alertas para condições severas e geolocalização precisa, tudo com um design simples e intuitivo.
+            O WeatherNow é um aplicativo que fornece dados em tempo real sobre clima, com previsão de 5 dias, alertas
+            para condições severas e geolocalização precisa, tudo com um design simples e intuitivo.
           </p>
-          <a href="https://previsao-do-tempo-react-ebon.vercel.app/" target="_blank" class="btn-view animate-btn">VER PROJETO</a>
+          <a href="https://previsao-do-tempo-react-ebon.vercel.app/" target="_blank" class="btn-view animate-btn">VER
+            PROJETO</a>
         </div>
         <div class="faça-mais-img">
           <img class="img-zoom" src="img/tempo.PNG" alt="">
         </div>
       </div>
     </section>
-    <section class="faça-mais">
-      <!--container -->
+
+    <section class="faça-mais" data-aos="zoom-in">
       <div class="container_projects">
         <div class="faça-mais-img">
           <img class="img-zoom" src="img/headphones.PNG" alt="">
@@ -331,20 +344,23 @@
         <div class="faça-mais-text">
           <h3>Headphones</h3>
           <p>
-            Este projeto visa desenvolver e vender fones de ouvido de alta qualidade, oferecendo uma experiência sonora excepcional com design moderno e tecnologia avançada.
+            Este projeto visa desenvolver e vender fones de ouvido de alta qualidade, oferecendo uma experiência sonora
+            excepcional com design moderno e tecnologia avançada.
           </p>
           <a href="https://65a9a9dfd86bec1bf695b20b--reliable-palmier-ad1fb3.netlify.app/" target="_blank"
             class="btn-view animate-btn">VER PROJETO</a>
         </div>
       </div>
     </section>
-    <section class="faça-mais">
-      <!--container -->
+
+    <section class="faça-mais" data-aos="fade-up">
       <div class="container_projects">
         <div class="faça-mais-text">
           <h3>Whitepace</h3>
           <p>
-            O projeto "WhitePace" oferece serviços de criação de sites, aplicativos e segurança, com soluções integradas para proteger ativos, informações e pessoas, visando proporcionar um ambiente seguro com tecnologias avançadas.
+            O projeto "WhitePace" oferece serviços de criação de sites, aplicativos e segurança, com soluções integradas
+            para proteger ativos, informações e pessoas, visando proporcionar um ambiente seguro com tecnologias
+            avançadas.
           </p>
           <a href="https://whitepace-three.vercel.app/" target="_blank" class="btn-view animate-btn">VER PROJETO</a>
         </div>
@@ -354,7 +370,7 @@
       </div>
     </section>
 
-    <section class="faça-mais">
+    <section class="faça-mais" data-aos="fade-in">
       <div class="container_projects">
         <div class="faça-mais-img">
           <img class="img-zoom" src="img/lista-de-tarefas_imag.PNG" alt="">
@@ -362,17 +378,20 @@
         <div class="faça-mais-text">
           <h3>To-Do-List</h3>
           <p>
-            Este projeto é uma aplicação de "Lista de Tarefas" em React JS, permitindo aos usuários gerenciar suas tarefas de forma eficiente com um design responsivo para dispositivos móveis e desktop.
+            Este projeto é uma aplicação de "Lista de Tarefas" em React JS, permitindo aos usuários gerenciar suas
+            tarefas de forma eficiente com um design responsivo para dispositivos móveis e desktop.
           </p>
-          <a href="https://lista-de-tarefas-blond-theta.vercel.app/" target="_blank" class="btn-view animate-btn">VER PROJETO</a>
+          <a href="https://lista-de-tarefas-blond-theta.vercel.app/" target="_blank" class="btn-view animate-btn">VER
+            PROJETO</a>
         </div>
       </div>
     </section>
   </section>
 
 
+
   <!-- CONTACT ME -->
-    <!-- Footer -->
+  <!-- Footer -->
   <footer>
     <div id="contato" class="conversa">
       <h3>Vamos conversar?</h3>
@@ -404,7 +423,16 @@
   </footer>
 
   <script src="main.js"></script>
-  
+  <script src="typewrite.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Duração da animação em milissegundos
+      once: true, // A animação só acontece uma vez
+    });
+  </script>
+
+
 </body>
 
 </html>
