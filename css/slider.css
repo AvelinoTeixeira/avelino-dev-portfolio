@@ -29,27 +29,6 @@
 }
 
 
-.wave-effect {
-    font-size: 50px;
-    font-weight: bold;
-    background: linear-gradient(90deg, #000, #3E4BC9, #6C7CFC); /* Gradiente suave do preto para azul */
-    background-size: 200% 100%;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: wave 4s infinite alternate; /* Efeito Ping Pong nas letras */
-  }
-  
-  @keyframes wave {
-    0% {
-      background-position: -200% 0;
-    }
-    100% {
-      background-position: 200% 0;
-    }
-  }
-  
-  
 
   .letter {
     display: inline-block;
