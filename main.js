@@ -6,23 +6,18 @@ window.onload = function () {
   let lastScrollTop = 0; // Armazena a última posição do scroll
   
   window.addEventListener("scroll", () => {
-      const nav = document.querySelector("nav");
-      const firstSection = document.querySelector("section"); // Pega a primeira seção da página
-      let scrollTop = window.scrollY; // Posição atual do scroll
-  
-      if (scrollTop > firstSection.offsetTop) { 
-          // Só adiciona a sombra se a navbar ultrapassou a primeira seção
-          if (scrollTop > lastScrollTop) { 
-              nav.classList.add("shadow-down"); // Quando desce a página, a sombra aparece
-          } else {
-              nav.classList.remove("shadow-down"); // Quando sobe a página, a sombra desaparece
-          }
-      } else {
-          nav.classList.remove("shadow-down"); // Remove a sombra se estiver no topo
-      }
-  
-      lastScrollTop = scrollTop; // Atualiza a última posição do scroll
-  });
+    const nav = document.querySelector("nav");
+    const firstSection = document.querySelector("section"); // Primeira seção da página
+    let scrollTop = window.scrollY; // Posição atual do scroll
+
+    if (scrollTop > firstSection.offsetTop) { 
+        nav.classList.add("shadow-down"); // Adiciona a sombra se passar da primeira seção
+    } else {
+        nav.classList.remove("shadow-down"); // Remove a sombra se estiver no topo
+    }
+
+    lastScrollTop = scrollTop; // Atualiza a última posição do scroll
+});
   
   // Função para exibir/ocultar o menu hambúrguer
   function menuShow() {
