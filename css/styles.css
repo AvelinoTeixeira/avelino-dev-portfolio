@@ -20,7 +20,7 @@ nav {
     background-color: #FFFFFF;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px 0 100px;
+    padding: 0px 40px 0px 40px;
     flex-wrap: wrap;
     transition: box-shadow 0.3s ease;
     z-index: 100;
@@ -141,8 +141,8 @@ nav .menu-btn i{
 /* CONTEÚDO PRINCIPAL*/
 
 .conteudo{
-    margin-left: 60px;
-    padding: 40px;
+    
+    padding: 50px;
     color: var(--text-secondary-color);
     background-color: var(--text-color);
     transition: all 0.5s ease;

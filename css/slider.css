@@ -37,7 +37,7 @@
   }
   
   .letter:nth-child(1) {
-    animation-delay: 2s;
+    animation-delay: 2;
   }
   
   .letter:nth-child(2) {
@@ -69,7 +69,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-8px); /* Pulo para cima */
+      transform: translateY(-5px); /* Pulo para cima */
     }
     100% {
       transform: translateY(0); /* Volta para a posição original */
