@@ -137,6 +137,7 @@ body {
 
 /* Sobre Mim */
 .sobre {
+    max-width: 1200px;
   margin-bottom: 80px;
   padding: 80px 60px;
 }
