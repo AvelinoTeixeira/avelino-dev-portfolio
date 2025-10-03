@@ -1,297 +1,194 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AvelinoDev - Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="css/mediaquery.css">
-  <link rel="stylesheet" href="css/slider.css">
-  <link rel="stylesheet" href="css/typewriter.css">
-
-
-  <title>Avelino Teixeira</title>
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <nav>
-    <div class="logo">
-      <img src="/img/Avelino Teixeira.png" alt="">
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"><img src="img/AvelinoDev.png" alt=""></span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </header>
 
-    <div class="menu-btn">
-      <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+  <!-- Seção Hero -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Avelino Teixeira</h1>
+      <h2>Frontend Engineer <br> & UX/UI Designer</h2>
+      <p>
+        Transformo ideias em experiências digitais rápidas,
+        funcionais e intuitivas — unindo código e design para criar produtos que encantam usuários.
+      </p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/avelino-teixeira-351a8524a/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/AvelinoTeixeira"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
+        <a href="https://api.whatsapp.com/send/?phone=+244940318631&text=Olá" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="whatsapp"></a>
+      </div>
     </div>
+    <div class="hero-img">
+      <img src="img/Programmer illustration.png" alt="Ilustração Dev">
+    </div>
+  </section>
 
-    <ul>
-      <li> <a href="#home" class="active">Home</a> </li>
-      <li> <a href="#sobre">Sobre</a> </li>
-      <li> <a href="#projects">Projetos</a> </li>
-      <li> <a href="#contato">Contato</a> </li>
-    </ul>
-  </nav>
+  <!-- Seção Sobre Mim -->
+  <section class="sobre" id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>
+      Frontend Engineer & UX/UI Designer com mais de 4 anos de experiência criando interfaces digitais modernas.
+      Especialista em React, Next.js, TypeScript e Tailwind, meu foco está em unir performance, usabilidade e estética
+      para entregar produtos digitais de alto impacto. Acredito que tecnologia e design caminham juntos para
+      proporcionar experiências únicas aos usuários. Atualmente, trabalho de forma remota para empresas no Brasil e
+      Angola, sempre em busca de novos desafios e inovação.
+    </p>
+  </section>
 
+  
 
-  <main id="home" class="conteudo">
-    <section class="section-desc">
-      <div class="title">
-        <h1 class="wave-effect" data-aos="fade-right">Frontend Engineer & <br>
-          UX/UI Designer.</h1>
-        <p data-aos="fade-right">Crio interfaces escaláveis e impactantes, unindo Desenvolvimento Front-End e UX/UI Design para entregar experiências intuitivas, acessíveis e de alta performance.Utilizo tecnologias modernas como : <strong class="letter">React</strong>,
-          <strong class="letter">TypeScript</strong>, <strong class="letter">Next.js</strong>, <strong class="letter">Tailwind CSS</strong>, <strong class="letter">Node.js</strong>
-          e <strong class="letter">Figma</strong> para entregar soluções inovadoras e de qualidade.
-        </p>
-      </div>
-
-      <div data-aos="fade-left" class="image-ux">
-        <img src="img/image-ux.png" alt="">
-      </div>
-    </section>
-
-
-
-    <section id="sobre" class="sobre">
-      <div class="sobre-desc">
-        <h3 data-aos="fade-up">Sobre mim</h3>
-        <p data-aos="fade-up">Sou Avelino Teixeira, Desenvolvedor Front-end e UX/UI Designer, com paixão por criar
-          soluções digitais que
-          unem funcionalidade e estética. Com habilidades em tecnologias como React, JavaScript, TypeScript, HTML, CSS e
-          ferramentas como Figma, trabalho para transformar ideias em interfaces modernas, escaláveis e de alta
-          performance. Meu foco é sempre proporcionar uma experiência de usuário intuitiva, acessível e impactante.
-          Busco constantemente aprender e aplicar as melhores práticas nas duas áreas, visando entregar soluções que
-          tragam resultados reais para os projetos e empresas com os quais trabalho.</p>
-        <div class="social">
-          <a data-aos="fade-right" href="https://www.linkedin.com/in/avelino-teixeira-351a8524a/?locale=pt_BR"
-            target="_blank">
-            <i class='bx bxl-linkedin' style="color: #C4CFDE;">
-            </i>
-          </a>
-          <a data-aos="fade-right" href="https://api.whatsapp.com/send/?phone=%2B244958323454&text=Ol%C3%A1%2C+estou+interessado+nos+seus+servi%C3%A7os" target="_blank">
-            <i class='bx bxl-whatsapp' style="color: #C4CFDE;">
-            </i>
-          </a>
-          <a data-aos="fade-right" href="https://github.com/AvelinoTeixeira?tab=repositories" target="_blank">
-            <i class='bx bxl-github' style="color: #C4CFDE;">
-            </i>
-          </a>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in" id="sobre" class="sobre-image">
-        <img src="img/avatar-Photoroom.png" alt="">
-      </div>
-    </section>
-
-
-    <section class="tecnologias">
+  <section class="tecnologias">
       <h3>Soft skills</h3>
     </section>
 
-    <section>
-      <div class="skills-container">
-        <!-- Column 1 -->
-        <div class="skill-column">
+  <section>
+  <div class="skills-container">
+    <!-- Coluna 1 -->
+    <div class="skill-column">
 
-          <div class="skill-meter-container">
-            <div class="skill-label">PHOTOSHOP</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="70">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">FIGMA</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="90">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">UI/UX DESIGN</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="90">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">ADOBE XD</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="80">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">ADOBE PREMIERE</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="70">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">AFTER EFFECTS</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="70">0%</div>
-            </div>
-          </div>
-
-        </div>
-        <!-- Column 2 -->
-        <div class="skill-column">
-
-          <div class="skill-meter-container">
-            <div class="skill-label">React JS</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="85">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">Next.JS</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="90">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">TailwindCss</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="88">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">JavaScript</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="90">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">CSS</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="99">0%</div>
-            </div>
-          </div>
-          <div class="skill-meter-container">
-            <div class="skill-label">HTML5</div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-percentage="100">0%</div>
-            </div>
-          </div>
+      <div class="skill-meter-container">
+        <div class="skill-label">Figma</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
         </div>
       </div>
-    </section>
 
-
-    <section>
-      <div class="slider">
-        <div class="logos">
-          <img src="img/REACT.png" alt="">
-          <img src="img/NEXT-JS.png" alt="">
-          <img src="img/TAILWIND.png" alt="">
-          <img src="img/JAVASCRIPT.png" alt="">
-          <img src="img/TYPESCRIPT.png" alt="">
-          <img src="img/HTML5.png" alt="">
-          <img src="img/CSS3.png" alt="">
-          <img src="img/NODE.png" alt="">
-          <img src="img/MONGODB.png" alt="">
-          <img src="img/SQL.png" alt="">
-          <img src="img/PHP.png" alt="">
-          <img src="img/GIT-VERS.png" alt="">
-          <img src="img/GITHUB.png" alt="">
-          <img src="img/WODRPRESS.png" alt="">
-          <img src="img/FIGMA.png" alt="">
-          <img src="img/ADOBE-PREMIERE.png" alt="">
-          <img src="img/ADOBE-XD.png" alt="">
-          <img src="img/AFTER-EFFECTS.png" alt="">
-
-
-          <img src="img/REACT.png" alt="">
-          <img src="img/NEXT-JS.png" alt="">
-          <img src="img/TAILWIND.png" alt="">
-          <img src="img/JAVASCRIPT.png" alt="">
-          <img src="img/TYPESCRIPT.png" alt="">
-          <img src="img/HTML5.png" alt="">
-          <img src="img/CSS3.png" alt="">
-          <img src="img/NODE.png" alt="">
-          <img src="img/MONGODB.png" alt="">
-          <img src="img/SQL.png" alt="">
-          <img src="img/PHP.png" alt="">
-          <img src="img/GIT-VERS.png" alt="">
-          <img src="img/GITHUB.png" alt="">
-          <img src="img/WODRPRESS.png" alt="">
-          <img src="img/FIGMA.png" alt="">
-          <img src="img/ADOBE-PREMIERE.png" alt="">
-          <img src="img/ADOBE-XD.png" alt="">
-          <img src="img/AFTER-EFFECTS.png" alt="">
+      <div class="skill-meter-container">
+        <div class="skill-label">Adobe XD</div>
+        <div class="skill-bar" data-level="Intermediário">
+          <div class="skill-bar-fill"></div>
         </div>
       </div>
-    </section>
 
-
-
-
-    <section class="my">
-      <div class="what">
-        <div>
-          <h1>Design Inteligente</h1>
-        </div>
-        <div class="cardDo">
-          <div class="strategy">
-            <div class="card-box">
-              <img src="img/UI-UX-Design.png" alt="">
-              <h3>Pesquisa</h3>
-              <p>
-                Minhas decisões são guiadas por dados reais. Utilizo pesquisas para entender profundamente o usuário,
-                criando soluções baseadas em insights confiáveis.</p>
-
-            </div>
-
-            <div class="card-box">
-              <img src="img/roadmap.webp" alt="">
-              <h3>Estrategia</h3>
-              <p>
-                Planejo estratégias que combinem objetivos de negócio e UX, direcionando cada projeto para resultados
-                impactantes
-                alinhado com o cliente.</p>
-
-            </div>
-
-            <div class="card-box">
-              <img src="img/template.png" alt="">
-              <h3>Design</h3>
-              <p>
-                Crio designs funcionais e atrativos que refletem a identidade da marca e otimizam o usuário experiência,
-                com foco em inovação e usabilidade.</p>
-
-            </div>
-
-          </div>
+      <div class="skill-meter-container">
+        <div class="skill-label">UX Research</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
         </div>
       </div>
-    </section>
 
+      <div class="skill-meter-container">
+        <div class="skill-label">Wireframing</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
 
-    <div id="projects" class="Destaque">
-      <h1>Portfólio</h1>
+      <div class="skill-meter-container">
+        <div class="skill-label">Prototipagem</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="skill-meter-container">
+        <div class="skill-label">Design System</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="skill-meter-container">
+        <div class="skill-label">Styled Components</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
     </div>
 
+    <!-- Coluna 2 -->
+    <div class="skill-column">
 
-    <!--container -->
+      <div class="skill-meter-container">
+        <div class="skill-label">React.Js</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
 
+      <div class="skill-meter-container">
+        <div class="skill-label">Next.Js</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
 
+      <div class="skill-meter-container">
+        <div class="skill-label">TailwindCss</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="skill-meter-container">
+        <div class="skill-label">JavaScript</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="skill-meter-container">
+        <div class="skill-label">CSS</div>
+        <div class="skill-bar" data-level="Expert">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="skill-meter-container">
+        <div class="skill-label">HTML5</div>
+        <div class="skill-bar" data-level="Expert">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="skill-meter-container">
+        <div class="skill-label">Styled Components</div>
+        <div class="skill-bar" data-level="Avançado">
+          <div class="skill-bar-fill"></div>
+        </div>
+      </div>
     </div>
-  </main>
+  </div>
+</section>
 
-  <section class="project">
+
+
+
+  <div id="projects" class="Destaque">
+      <h3>Projetos em Destaque</h3>
+    </div>
+
+  <section class="project" id="projetos">
     <section class="faça-mais" data-aos="fade-up">
       <div class="container_projects">
         <div class="faça-mais-text">
@@ -429,7 +326,10 @@
 
 
 
-  <!-- CONTACT ME -->
+
+
+
+
   <!-- Footer -->
  <footer>
   <div class="footer-wrapper">
@@ -470,20 +370,7 @@
 
 </footer>
 
-
-
-
-  <script src="main.js"></script>
-  <script src="typewrite.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000, // Duração da animação em milissegundos
-      once: true, // A animação só acontece uma vez
-    });
-  </script>
-
-
+<script src="script.js"></script>
+<script src="barra.js"></script>
 </body>
-
 </html>
