@@ -138,20 +138,79 @@ body {
 /* Sobre Mim */
 .sobre {
   max-width: 1200px;
-  margin-bottom: 80px;
+  margin: 100px auto;
   padding: 80px 60px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
 .sobre h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 700;
   color: #222;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.sobre h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #6b4af2;
+  border-radius: 2px;
+  margin: 10px auto 0;
 }
 
 .sobre p {
-  max-width: 800px;
-  font-size: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: #444;
+}
+
+.sobre p strong {
+  color: #6b4af2;
+  font-weight: 600;
+}
+
+/* ============================= */
+/* 📱 Responsividade             */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .sobre {
+    padding: 60px 40px;
+  }
+
+  .sobre h2 {
+    font-size: 1.8rem;
+  }
+
+  .sobre p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre {
+    padding: 40px 20px;
+    margin: 60px 20px;
+  }
+
+  .sobre h2 {
+    font-size: 1.6rem;
+  }
+
+  .sobre p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
 }
 
 /* Responsividade */
@@ -189,21 +248,17 @@ body {
   }
 }
 
-
-
 /* COOMPETÊNCIAS TECNICAS*/
 
-
-.tecnologias h3{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    font-size: 35px;
-    justify-content: center;
+.tecnologias h3 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  justify-content: center;
 }
 
 /*SOFT SKILLS*/
-
 
 .skills-container {
   display: flex;
@@ -245,7 +300,6 @@ body {
   width: 0;
   background: linear-gradient(90deg, #111827, #374151);
 
-
   border-radius: 8px;
   transition: width 1.5s ease-in-out;
 }
@@ -279,16 +333,13 @@ body {
   width: 100%;
 }
 
-
 /* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
-    .skills-container {
-        flex-direction: column; /* Stack columns vertically */
-        align-items: center;
-    }
+  .skills-container {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center;
+  }
 }
-
-
 
 /* MEUS PROJECTOS*/
 
@@ -316,7 +367,7 @@ body {
 
 .btn-view {
   font-size: 16px;
-  background: #6B4AF2;
+  background: #6b4af2;
   color: #fff;
   padding: 10px 15px;
   border-radius: 10px;
