@@ -10,6 +10,7 @@ body {
   color: #222;
   background: #fff;
   line-height: 1.6;
+  overflow: hidden;
 }
 
 /* Navbar */
@@ -133,6 +134,46 @@ body {
 .hero-img img {
   max-width: 380px;
   border-radius: 10px;
+}
+
+/* ============================= */
+/* 📱 Responsividade Mobile      */
+/* ============================= */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* texto em cima, imagem embaixo */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh; /* ocupa altura total da tela */
+    border-radius: 0; /* opcional: remove bordas em mobile */
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .hero-text {
+    flex: unset;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1rem;
+  }
+
+  .hero-img {
+    flex: unset;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .hero-img img {
+    max-width: 80%;
+  }
 }
 
 /* Sobre Mim */
